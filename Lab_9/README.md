@@ -45,6 +45,66 @@
 ### Saltamos a "configuración adicional" y lo dejamos en por defecto  
 ### Saltamos a "Etiquetas" y lo dejamos vacío  
 ### Saltamos a "Revisar y crear" y le damos a crear  
+![image](https://github.com/user-attachments/assets/f25057ca-a7d1-4f48-95cf-efeeea0bc677)  
+### Hacemos click en la base de datos y luego en "Editor de consultas"  
+![image](https://github.com/user-attachments/assets/9c73a97e-a9ed-4fe8-9733-5c3ccc9c4271)  
+### vemos que hay un error con nuestro correo, para solucionarlo nos vamos al servidor dentro del grupo de recursos  
+### en la pestaña de "Seguridad" seleccionamos "Redes", luego hacemos click en "Redes seleccionadas"  
+![image](https://github.com/user-attachments/assets/b62a1d4a-559b-4f9a-b1ea-7bc1fb914ddd)  
+### En reglas del firewall, damos a añadir la dirección IPv4 del cliente  
+![image](https://github.com/user-attachments/assets/fbc8b227-47a4-46e9-ac31-b508662e7cf8)  
+![image](https://github.com/user-attachments/assets/c8c5671a-fc15-4b27-bc10-3ab5473694b7)  
+### Ahora vemos que lo detecta sin problemas  
+![image](https://github.com/user-attachments/assets/83cd4f60-3c25-435b-a07c-115540e98bbd)  
+
+# Identidades Administradas
+### Escribimos "Identidades Administradas" en la barra de búsqueda  
+![image](https://github.com/user-attachments/assets/e375ca73-53c2-4cb6-94d7-3a993a9fd48c)  
+### Elegimos la primera opción y luego damos click en "crear"  
+![image](https://github.com/user-attachments/assets/843c746f-af99-4f33-80b5-1bf98bf3c5b6)  
+### Introducimos las siguientes opciones  
+![image](https://github.com/user-attachments/assets/63113b63-e615-42ba-8829-e65e285708ee)  
+### Saltamos a la opción de "Revisar" y le damos a "crear"  
+![image](https://github.com/user-attachments/assets/9c48af46-8c48-4ec3-b55b-c50d076d47b5)  
+![image](https://github.com/user-attachments/assets/6d7f5f42-a904-4ba2-b41b-ce6f5c8686b1)  
+### Una vez creado nos vamos a Home y buscamos storagep9  
+![image](https://github.com/user-attachments/assets/de2dc415-4049-4338-8a92-dbb30ee9c5cb)  
+### Seleccionamos Control de Acceso (IAM), le damos a "crear"  
+![image](https://github.com/user-attachments/assets/d83a86ba-8994-4ffc-9b9d-4d32fdb7ae74)  
+### Creamos uno que se llama Storage Blob Data Owner
+![image](https://github.com/user-attachments/assets/197d0d6d-9c5e-4f9b-83e4-c2b1256edc6c)  
+### Introducimos las siguientes  
+![image](https://github.com/user-attachments/assets/7e6741a1-84cc-41f1-b0e1-c22a8a8c83e1)  
+### dejamos las "Condiciones" en por defecto  
+![image](https://github.com/user-attachments/assets/0b4ff0f7-cebf-4804-99ba-8b3ded0342b6)  
+### Dejamos la revisión y asignación en por defecto y creamos
+### Ahora nos vamos al servidor y seleccionamos Control de acceso (IAM), luego a "añadir"
+![image](https://github.com/user-attachments/assets/5dc0fd8d-a42a-4350-afb2-2317815d68eb)
+### establecemos la siguiente configuración
+![image](https://github.com/user-attachments/assets/8335246a-59ff-4535-9f18-0996f670cad1)
+### Siguiente y "Revisar y Asignar"
+
+# HD Insight
+
+### Escribimos en la barra de búsqueda "Clústeres de HD Insight" y creamos uno  
+![image](https://github.com/user-attachments/assets/f1edbf44-6d73-4af1-8f71-ba4d5f04ee49)  
+### Al seleccionar la subscripción, si nos dice que no está registrada le damos a registrar y seleccionamos aquí  
+![image](https://github.com/user-attachments/assets/f312cd58-122d-4771-923c-bcdeb7a3bf91)  
+### Hacemos click en "seleccionar tipo de cluster", luego seleccionamos "Interactive query"  
+![image](https://github.com/user-attachments/assets/27b995a7-16b5-4415-b969-435e8b98be74)  
+### Seleccionamos usuario y contraseña (admin13, Mike1234!!)  
+![image](https://github.com/user-attachments/assets/d43eb755-54c8-476a-b922-3e77e5f1c5e9)  
+### Hacemos click en "Siguiente: Almacenamiento"  
+![image](https://github.com/user-attachments/assets/b75247fe-6ea7-46a6-b760-50f987daa1c4)  
+![image](https://github.com/user-attachments/assets/f3d23b02-eefd-47bc-a5ee-dc9ee9221cef)  
+### En redes dejamos la configuración por defecto  
+![image](https://github.com/user-attachments/assets/4b9cdb22-6838-452d-8d5e-0a35835212d3)
+### Le damos a crear  
+![image](https://github.com/user-attachments/assets/df4071c1-ebfd-40ef-bd80-3cbc2f336932)  
+
+
+
+
 
 
 
