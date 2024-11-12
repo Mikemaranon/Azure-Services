@@ -2,7 +2,18 @@
 Las siguientes 10 preguntas pertenecen a la práctica 10 y serán desarrolladas en detalles en este repositorio:
 
 ### Pregunta 1. Selecciona todos los registros del año 2023 donde el vuelo fue retrasado más de 60 minutos. Muestra las columnas de fecha, aerolínea, número de vuelo y el retraso en minutos.  
-
+``` SQL
+SELECT 
+    CONCAT(year, '-', month, '-', day) AS fecha,
+    airline AS aerolinea,
+    flight_number AS numero_de_vuelo,
+    departure_delay + arrival_delay AS retraso_total_minutos
+FROM 
+    vuelos
+WHERE 
+    year = 2023 
+    AND (departure_delay > 60 OR arrival_delay > 60);
+```
 ### Pregunta 2. Calcula el promedio de retraso en la llegada y en la salida para cada aerolínea. Ordena los resultados en orden descendente por el retraso promedio en la llegada.  
 
 ### Pregunta 3. ¿Cuáles son las cinco rutas más comunes (aeropuerto de origen y destino) en los datos? Incluye el conteo de vuelos para cada ruta.
