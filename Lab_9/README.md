@@ -102,6 +102,22 @@
 ### Le damos a crear  
 ![image](https://github.com/user-attachments/assets/df4071c1-ebfd-40ef-bd80-3cbc2f336932)  
 
+### Ahora nos vamos a "storagep9" y nos ubicamos aquí  
+![image](https://github.com/user-attachments/assets/2c5e78a0-1d66-41a5-a82d-573fd55731cc)  
+### Agregamos directorio  
+![image](https://github.com/user-attachments/assets/8603c4bd-1b2a-4cbd-9ebd-32ee153dd343)  
+### Dentro del directorio creamos otro nuevo  
+![image](https://github.com/user-attachments/assets/9cfd31d5-26b7-4c20-8251-67e306988320)  
+### Ahora cargamos el csv llamado "simulated_flight_data_extensive.csv" en el segundo directorio  
+![image](https://github.com/user-attachments/assets/ea8de4ee-fdc8-4c8e-b6d6-2337682595d6)  
+![image](https://github.com/user-attachments/assets/331bbfdf-5d3b-4d66-8c70-bdac3a06f5b2)  
+
+
+
+
+
+
+
 
 
 
