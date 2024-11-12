@@ -189,28 +189,13 @@ SELECT * FROM flightdelay limit 5;
 ### Este es el resultado  
 ![image](https://github.com/user-attachments/assets/d305b213-1b67-4fe1-b692-e5d0145bea45)  
 ![image](https://github.com/user-attachments/assets/4aec3fce-0da5-4ade-bc57-316e0e84628a)  
-### 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Vamos a abrir un nuevo worksheet y ejecutamos el siguiente query
+``` SQL
+INSERT OVERWRITE DIRECTORY '/demo/FlightDelayData/output'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+SELECT regexp_replace(origin_city_name, '''', ''),
+    avg(weather_delay)
+FROM flightdelay
+WHERE weather_delay IS NOT NULL
+GROUP BY origin_city_name;
+```
