@@ -127,13 +127,52 @@ GROUP BY
 
 ### Pregunta 8. Selecciona los vuelos con una duración (tiempo de vuelo) superior al promedio de duración de todos los vuelos en el mismo año. Muestra las columnas de aerolínea, origen, destino y duración del vuelo. 
 ``` SQL
-
+SELECT 
+    airline, 
+    origin_airport_code, 
+    dest_airport_code, 
+    duration
+FROM 
+    flightdelay f1
+WHERE 
+    duration > (
+        SELECT 
+            AVG(duration)
+        FROM 
+            flightdelay f2
+        WHERE 
+            year(f1.flight_date) = year(f2.flight_date)
+    );
 ```
+![image](https://github.com/user-attachments/assets/9251a5df-1dde-4e66-81d7-a763ca39a332)
+
 ### Pregunta 9. Encuentra el porcentaje de vuelos de cada aerolínea que han tenido un retraso en la llegada superior a 30 minutos.
 ``` SQL
-
+SELECT 
+    airline, 
+    (COUNT(CASE WHEN arr_delay > 30 THEN 1 END) / COUNT(*)) * 100 AS delay_percentage
+FROM 
+    flightdelay
+GROUP BY 
+    airline;
 ```
+![image](https://github.com/user-attachments/assets/92bead12-7f52-467c-b232-60b266985696)
+
 ### Pregunta 10. Si tuvieras una tabla adicional de aeropuertos con columnas como airport_code y airport_name, escribe una consulta para unir esta tabla con los datos de vuelos y obtener el nombre del aeropuerto de origen y de destino en cada vuelo.
 ``` SQL
-
+SELECT 
+    f.airline, 
+    f.flight_num, 
+    f.flight_date, 
+    a1.airport_name AS origin_airport_name, 
+    a2.airport_name AS dest_airport_name, 
+    f.dep_delay, 
+    f.arr_delay, 
+    f.duration
+FROM 
+    flightdelay f
+JOIN 
+    airports a1 ON f.origin_airport_code = a1.airport_code
+JOIN 
+    airports a2 ON f.dest_airport_code = a2.airport_code;
 ```
